@@ -2,7 +2,7 @@
  * 目的: 在控制台显示一条信息
  * 日期: 2021-02-05
  * 作者: ZRH
-**/
+ */
 public class Welcome
 {
 	public static void main(String[] args)

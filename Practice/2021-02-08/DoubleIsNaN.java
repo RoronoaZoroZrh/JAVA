@@ -2,7 +2,7 @@
  * 目的: 
  * 日期: 2021-02-08
  * 作者: ZRH
-**/
+ */
 public class DoubleIsNaN
 {
 	public static void main(String[] args)

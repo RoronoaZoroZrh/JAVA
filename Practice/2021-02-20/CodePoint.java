@@ -17,7 +17,31 @@ public class CodePoint
         }
         for (int i = 0; i < s.codePointCount(0, s.length()); ++i)
         {
+            System.out.println(s.offsetByCodePoints(0, i));
             System.out.println(s.codePointAt(s.offsetByCodePoints(0, i)));
         }
+        for (int i = 0; i < s.length();)
+        {
+            int cp = s.codePointAt(i);
+            if (Character.isSupplementaryCodePoint(cp))
+            {
+                System.out.println(cp);
+                i += 2;
+            }
+            else
+            {
+                System.out.println(cp);
+                i += 1;
+            }
+        }
+
+        int[] codePoints = s.codePoints().toArray();
+        for (int i = 0; i < codePoints.length; ++i)
+        {
+            System.out.println(codePoints[i]);
+        }
+
+        String ns = new String(codePoints, 0, codePoints.length);
+        System.out.println(ns);
     }
 }

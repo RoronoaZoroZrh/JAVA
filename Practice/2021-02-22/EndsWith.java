@@ -1,6 +1,6 @@
 /**
  * 目的: 学习String.endsWith的用法
- * 日期: 2021-02-20
+ * 日期: 2021-02-22
  * 作者: ZRH
  */
 public class EndsWith
